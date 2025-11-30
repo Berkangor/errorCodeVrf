@@ -1,4 +1,10 @@
-const BASE_URL = "http://localhost:3000/api/v1";
+// src/api/faultsApi.js (veya neredeyse)
+
+// Vite'de environment değişkenlerine böyle erişiyoruz:
+const API_ORIGIN = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
+
+// Bizim backend tüm endpoint’leri /api/v1 altında
+const BASE_URL = `${API_ORIGIN}/api/v1`;
 
 export async function fetchAllFaults() {
   const res = await fetch(`${BASE_URL}/faults`);
@@ -6,12 +12,10 @@ export async function fetchAllFaults() {
     throw new Error("Arıza listesi alınamadı");
   }
 
-  // backend'de { count, data } dönüyordu
   const json = await res.json();
   return json.data || json.faults || [];
 }
 
-// İstersen tek kod aramak için:
 export async function searchFaultByMarkaKod(marka, kod) {
   const params = new URLSearchParams({ marka, kod });
   const res = await fetch(`${BASE_URL}/faults/search?` + params.toString());
