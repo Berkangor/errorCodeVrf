@@ -1,0 +1,332 @@
+{
+  "faults": [
+    {
+      "id": "lg-outdoor-53-1",
+      "kod": "53-1",
+      "marka": "LG",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Multi V 5",
+      "tanım": "İç Ünite ile Dış Ünite Haberleşme Hatası",
+      "olasi_nedenler": [
+        "Haberleşme kablosunda kopukluk veya gevşek bağlantı.",
+        "Yanlış kablolama veya polarite (A/B) hatası.",
+        "Dış ünite ana PCB (Power Control Board) arızası.",
+        "İç ünite EEP (EEPROM) hatası veya adresi."
+      ],
+      "cozum_adimlari": [
+        "Cihazın tüm enerjisini kesin ve 5 dakika bekleyin.",
+        "Haberleşme hattını (P1/P2) görsel olarak kontrol edin.",
+        "Voltaj ölçümü yapın: AC 12V-14V aralığında gerilim olmalıdır.",
+        "Tüm iç ünite adreslerinin benzersiz ve doğru ayarlandığını kontrol edin.",
+        "Gerekirse dış ünite ana PCB'sini test edin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Yüksek gerilim tehlikesi! Ölçüm yapmadan önce tüm enerjiyi kesin."
+    },
+    {
+      "id": "lg-indoor-ch01",
+      "kod": "CH01",
+      "marka": "LG",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Tüm Multi V",
+      "tanım": "İç Ünite Oda Sıcaklık Sensörü (Termistör) Hatası",
+      "olasi_nedenler": [
+        "Oda sensörünün yerinden çıkması veya gevşek bağlantı.",
+        "Sensör kablosunda kopukluk veya kısa devre.",
+        "İç ünite PCB arızası.",
+        "Sensör direnç değerlerinin anormal olması (sıcaklık okuma hatası)."
+      ],
+      "cozum_adimlari": [
+        "Sensör bağlantılarını kontrol edin ve yerine doğru oturtun.",
+        "Sensörün direncini oda sıcaklığında ölçün (Genellikle 5-10 KiloOhm aralığında).",
+        "Sensör kablosunda fiziksel hasar olup olmadığını kontrol edin.",
+        "Sorun devam ederse yeni bir oda sensörü ile değiştirin."
+      ],
+      "zorluk_seviyesi": 2,
+      "guvenlik_uyarisi": "Basit arıza. Elektrik riski düşüktür ancak yine de enerji kesilmelidir."
+    },
+    {
+      "id": "lg-outdoor-50",
+      "kod": "50",
+      "marka": "LG",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Multi V 5",
+      "tanım": "Kompresör Inverter Modül Hatası (IPM)",
+      "olasi_nedenler": [
+        "Yüksek Kompresör Basıncı veya Aşırı Akım.",
+        "Kompresör sargılarında kısa devre veya toprak kaçağı.",
+        "Dış ünite Inverter PCB arızası.",
+        "Yanlış güç kaynağı voltajı."
+      ],
+      "cozum_adimlari": [
+        "Dış ünite akım ve voltaj değerlerini kontrol edin.",
+        "Kompresör sargı direncini ölçün. Tüm sargılar aynı direnç değerini göstermelidir.",
+        "Inverter PCB'nin konektörlerini kontrol edin (özellikle U, V, W çıkışları).",
+        "Sistemde aşırı yük olup olmadığını kontrol edin (örneğin hava filtresi tıkanıklığı).",
+        "Sorun devam ederse Inverter PCB'yi değiştirin."
+      ],
+      "zorluk_seviyesi": 5,
+      "guvenlik_uyarisi": "Yüksek DC gerilim tehlikesi! Sadece kalifiye personel müdahale etmelidir. Kapağı açmadan önce kondansatörlerin boşaldığından emin olun."
+    },
+    {
+      "id": "lg-outdoor-40",
+      "kod": "40",
+      "marka": "LG",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Tüm Multi V",
+      "tanım": "Kompresör Deşarj (Çıkış) Sıcaklık Sensörü Hatası",
+      "olasi_nedenler": [
+        "Sensör arızası veya kablo kopukluğu.",
+        "Sistemde soğutucu akışkan (gaz) kaçağı veya eksikliği (en yaygın neden).",
+        "Deşarj sıcaklığının anormal yükselmesi."
+      ],
+      "cozum_adimlari": [
+        "Sensörün direncini ölçün ve sıcaklık tablosu ile karşılaştırın.",
+        "Sistemdeki soğutucu akışkan miktarını kontrol edin. Eksik ise kaçağı bulun ve giderin.",
+        "Dış ünite fanlarının düzgün çalıştığından emin olun."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Soğutucu akışkan ile çalışmak özel eğitim gerektirir. Yüksek deşarj sıcaklığı kompresöre zarar verebilir."
+    },
+    {
+      "id": "lg-indoor-ch06",
+      "kod": "CH06",
+      "marka": "LG",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Tüm Multi V",
+      "tanım": "İç Ünite Isı Eşanjörü (Batarya) Sensörü Hatası",
+      "olasi_nedenler": [
+        "Sensör arızalı veya bağlantı gevşek.",
+        "Hava filtresi aşırı derecede tıkalı.",
+        "Batarya sensörünün yerinden kayması."
+      ],
+      "cozum_adimlari": [
+        "Sensörün batarya borusuna doğru şekilde temas ettiğini kontrol edin.",
+        "Hava filtrelerini temizleyin veya değiştirin.",
+        "Sensör direncini ölçün. Sorun devam ederse sensörü değiştirin."
+      ],
+      "zorluk_seviyesi": 2,
+      "guvenlik_uyarisi": "Enerji kesilmeden PCB kartlarına müdahale etmeyin."
+    },
+
+    {
+      "id": "lg-indoor-ch05",
+      "kod": "CH05",
+      "marka": "LG",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Tüm Multi V",
+      "tanım": "İç/Dış Ünite Haberleşme Hatası",
+      "olasi_nedenler": [
+        "İç ünite ile dış ünite arasındaki haberleşme kablosunda kopukluk veya kısa devre.",
+        "Haberleşme hattında ters polarite (A/B uçlarının ters bağlanması).",
+        "Birden fazla iç ünitede aynı adresin kullanılması.",
+        "Dış ünitenin enerjisinin kesik olması veya geç gelmesi."
+      ],
+      "cozum_adimlari": [
+        "Tüm sistemin enerjisini kesin, 3–5 dakika bekledikten sonra tekrar enerji verin.",
+        "İç ve dış ünite arasındaki haberleşme kablosunun bağlantı sırasını ve polaritesini kontrol edin.",
+        "İç ünite adres ayarlarını kontrol edin; her iç ünitenin benzersiz adresi olmalıdır.",
+        "Haberleşme hattındaki gerilimi ölçün (genellikle 12–24V aralığında).",
+        "Sorun devam ederse ilgili iç ünite ve dış ünite PCB kartlarını test edin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Haberleşme hattı düşük voltajlı olsa da çalışma sırasında ana besleme gerilimini mutlaka kesin."
+    },
+    {
+      "id": "lg-indoor-ch09",
+      "kod": "CH09",
+      "marka": "LG",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Tüm Multi V",
+      "tanım": "Drenaj Pompası veya Seviye Sensörü Hatası",
+      "olasi_nedenler": [
+        "Drenaj pompası çalışmıyor veya sıkışmış durumda.",
+        "Seviye sensörü (float switch) takılı kalmış veya arızalı.",
+        "Drenaj hattı tıkalı, su düzgün tahliye edilmiyor.",
+        "Sensör kablosu veya pompa besleme hattında kopukluk."
+      ],
+      "cozum_adimlari": [
+        "İç ünitenin drenaj tavasında su birikimi olup olmadığını kontrol edin.",
+        "Drenaj hattını temizleyin, tıkanıklıkları giderin.",
+        "Float switch'in serbest hareket ettiğinden emin olun, manuel olarak test edin.",
+        "Pompa besleme gerilimini ve akımını kontrol edin; gerekirse pompayı değiştirin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Su ile çalışma sırasında kayma ve elektrik çarpması riskine karşı dikkatli olun, enerjiyi kesin."
+    },
+    {
+      "id": "lg-indoor-ch32",
+      "kod": "CH32",
+      "marka": "LG",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Tüm Multi V",
+      "tanım": "EEPROM / Adresleme Verisi Hatası",
+      "olasi_nedenler": [
+        "İç ünite PCB üzerindeki EEPROM verisinin bozulması.",
+        "Yanlış adresleme yapılması veya adres çakışması.",
+        "Adres ayarı sırasında enerji kesilmesi.",
+        "Uyumsuz iç ünite kartı kullanılması."
+      ],
+      "cozum_adimlari": [
+        "İç ünitenin adresleme ayarlarını kontrol edin ve gerekirse yeniden yapılandırın.",
+        "Aynı hatta bağlı diğer iç ünitelerde adres tekrarı olmadığını doğrulayın.",
+        "Gerekirse üretici talimatına göre EEPROM reset/prosedürünü uygulayın.",
+        "Sorun çözülmezse PCB kartını yetkili yedek parça ile değiştirin."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "EEPROM ve PCB işlemleri statik elektrikten etkilenebilir; uygun ESD koruması kullanın."
+    },
+    {
+      "id": "lg-indoor-ch41",
+      "kod": "CH41",
+      "marka": "LG",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Tüm Multi V",
+      "tanım": "İç Ünite Fan Motoru / Hall Sensör Hatası",
+      "olasi_nedenler": [
+        "Fan motoru konnektöründe gevşeklik veya oksitlenme.",
+        "DC fan motoru arızası.",
+        "Hall sensöründen geri besleme sinyalinin gelmemesi.",
+        "Fan kanatlarında yabancı cisim, sıkışma."
+      ],
+      "cozum_adimlari": [
+        "İç ünite kapağını açın ve fanın serbestçe döndüğünü kontrol edin.",
+        "Fan motoru konnektör ve kablolarını gözle ve ölçü aletiyle kontrol edin.",
+        "Fan motorunu test modunda çalıştırmayı deneyin (varsa diagnostik fonksiyon).",
+        "Sorun devam ederse fan motorunu ve gerekiyorsa iç ünite PCB'yi değiştirin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Dönen parçalar nedeniyle çalışma sırasında el ve parmak sıkışmalarına karşı enerjiyi kesin."
+    },
+    {
+      "id": "lg-outdoor-21",
+      "kod": "21",
+      "marka": "LG",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Multi V 5",
+      "tanım": "Faz Sırası / Eksik Faz Hatası (Üç Faz Besleme)",
+      "olasi_nedenler": [
+        "Üç fazdan birinin eksik olması.",
+        "Şebeke faz sırasının ters bağlanması.",
+        "Klemens bağlantılarında gevşeklik veya yanma.",
+        "Şebekeden gelen ciddi dengesizlikler."
+      ],
+      "cozum_adimlari": [
+        "Üç fazlı besleme gerilimini ve faz sırasını faz sırası ölçer ile kontrol edin.",
+        "Eksik veya zayıf faz var ise elektrik panosundaki kablo ve sigortaları kontrol edin.",
+        "Faz sıralama rölesi varsa ayarlarını ve bağlantılarını kontrol edin.",
+        "Sorun devam ederse elektrik altyapısını yetkili elektrikçi ile kontrol ettirin."
+      ],
+      "zorluk_seviyesi": 5,
+      "guvenlik_uyarisi": "Üç fazlı yüksek gerilimle çalışmak ciddi hayati risk taşır; yetkili elektrik personeli harici müdahale etmeyin."
+    },
+    {
+      "id": "lg-outdoor-22",
+      "kod": "22",
+      "marka": "LG",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Multi V 5",
+      "tanım": "Aşırı Akım / Kısa Devre Koruması",
+      "olasi_nedenler": [
+        "Kompresör veya fan devrelerinde kısa devre.",
+        "Yanlış sigorta veya kesici seçimi.",
+        "Kablo izolasyonunda yanma veya toprak kaçağı.",
+        "Inverter devresinde arıza."
+      ],
+      "cozum_adimlari": [
+        "Besleme hattı sigorta ve termiklerini kontrol edin.",
+        "Kompresör ve fan devrelerinde ohmmetre ile kısa devre kontrolü yapın.",
+        "Kablo güzergahını yanık veya erime izlerine karşı inceleyin.",
+        "Gerekirse inverter kartı ve güç devre bileşenlerini üretici talimatına göre test edin."
+      ],
+      "zorluk_seviyesi": 5,
+      "guvenlik_uyarisi": "Aşırı akım ve kısa devre, yangın ve ciddi elektrik çarpması riski taşır; müdahale öncesi tüm enerjiyi kesin."
+    },
+    {
+      "id": "lg-outdoor-44",
+      "kod": "44",
+      "marka": "LG",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Tüm Multi V",
+      "tanım": "Dış Ünite Eşanjör Sıcaklık Sensörü Hatası",
+      "olasi_nedenler": [
+        "Sensör kablosunda kopukluk veya kısa devre.",
+        "Sensörün eşanjörden ayrılmış olması.",
+        "Sensör direncinin normal aralığın dışında olması."
+      ],
+      "cozum_adimlari": [
+        "Sensörün fiziksel olarak eşanjöre düzgün şekilde temas ettiğini kontrol edin.",
+        "Sensör kablo ve konnektörlerini gözle ve ölçü aleti ile kontrol edin.",
+        "Direnç ölçümü yaparak üretici referans değerleri ile karşılaştırın.",
+        "Gerekirse sensörü yenisiyle değiştirin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Dış ünite içinde çalışırken hareketli parçalara ve keskin saç kenarlarına dikkat edin."
+    },
+    {
+      "id": "lg-outdoor-51",
+      "kod": "51",
+      "marka": "LG",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Multi V 5",
+      "tanım": "Yüksek Basınç Koruması (HP)",
+      "olasi_nedenler": [
+        "Kondenser eşanjörünün kirli olması, hava akışının yetersiz kalması.",
+        "Dış ünite fanlarının arızalı olması veya dönmemesi.",
+        "Sistemde aşırı soğutucu akışkan şarjı.",
+        "Sıcak hava devirdaimi (dış ünite birbirine çok yakın)"
+      ],
+      "cozum_adimlari": [
+        "Dış ünite bataryasını ve fanları temizleyin, hava akışını engelleyen cisimleri kaldırın.",
+        "Fan motorlarının çalışmasını ve devirlerini kontrol edin.",
+        "Manifold ile yüksek basınç değerini ölçün, üretici sınırları ile karşılaştırın.",
+        "Gerekirse soğutucu akışkan miktarını üretici talimatına göre yeniden ayarlayın."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Yüksek basınç hattı ile çalışırken uygun kişisel koruyucu ekipman kullanın; yanlış müdahale kompresöre zarar verebilir."
+    },
+    {
+      "id": "lg-outdoor-52",
+      "kod": "52",
+      "marka": "LG",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Multi V 5",
+      "tanım": "Düşük Basınç Koruması (LP)",
+      "olasi_nedenler": [
+        "Sistemde soğutucu akışkan kaçağı veya eksik şarj.",
+        "Genleşme vanası veya dağıtım hattında tıkanıklık.",
+        "Aşırı düşük dış ortam sıcaklığında uygunsuz çalışma."
+      ],
+      "cozum_adimlari": [
+        "Manifold ile düşük basınç değerini ölçün.",
+        "Soğutucu akışkan hattını kaçak tespiti için kontrol edin; kaçak varsa onarın.",
+        "Genleşme vanasının ve filtrelerin tıkalı olup olmadığını kontrol edin.",
+        "Gerekirse sistem vakum ve yeniden şarj işlemini üretici talimatına göre uygulayın."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Soğutucu akışkanların yanlış kullanımı çevreye ve sağlığa zarar verebilir; yalnızca yetkili personel işlem yapmalıdır."
+    },
+    {
+      "id": "lg-outdoor-65",
+      "kod": "65",
+      "marka": "LG",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Tüm Multi V",
+      "tanım": "Kompresör Aşırı Deşarj Sıcaklığı / Koruma",
+      "olasi_nedenler": [
+        "Yetersiz soğutucu akışkan debisi (kısmi tıkanıklık veya eksik gaz).",
+        "Kondenser veya evaporatörde hava akışının zayıf olması.",
+        "Kompresör yağlama problemleri.",
+        "Aşırı yükte uzun süre çalışma."
+      ],
+      "cozum_adimlari": [
+        "Deşarj sıcaklığını kontrol edin ve referans değerlerle karşılaştırın.",
+        "Hava akışını (fanlar, filtreler, eşanjör temizlik durumu) kontrol edin.",
+        "Soğutucu akışkan devresinde basınç ve süperheat ölçümleri yapın.",
+        "Gerekirse sistem tasarımına uygun yük koşullarında yeniden devreye alın."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Aşırı deşarj sıcaklığı kompresör arızasına yol açabilir; arıza çözülmeden cihazı zorlamayın."
+    }
+  ]
+}

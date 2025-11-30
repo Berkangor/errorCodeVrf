@@ -1,0 +1,180 @@
+{
+  "faults": [
+    {
+      "id": "daikin-indoor-e01",
+      "kod": "E01",
+      "marka": "Daikin",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "VRV İç Ünite",
+      "tanım": "İç Ünite ile Uzaktan Kumanda Arasında Haberleşme Hatası",
+      "olasi_nedenler": [
+        "Kumanda ile iç ünite arasındaki haberleşme kablosunda kopukluk.",
+        "Adresleme hatası veya yanlış grup adresi.",
+        "Kumanda kablosu ters polarite ile bağlanmış.",
+        "İç ünite veya kumanda PCB arızası."
+      ],
+      "cozum_adimlari": [
+        "Kumanda bağlantı şemasına göre kablolamayı kontrol edin.",
+        "Kablo sürekliliğini ölçü aleti ile kontrol edin.",
+        "Adresleme ayarlarını ve grup ayarlarını kontrol edin, çakışma olmadığından emin olun.",
+        "Gerekirse kumanda veya iç ünite PCB’sini test edin/değiştirin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Düşük voltajlı haberleşme hattı olsa da müdahale öncesi ana enerjiyi kesin."
+    },
+    {
+      "id": "daikin-outdoor-u0",
+      "kod": "U0",
+      "marka": "Daikin",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "VRV",
+      "tanım": "Soğutucu Akışkan Yetersizliği / Düşük Şarj",
+      "olasi_nedenler": [
+        "Sistemde soğutucu akışkan kaçağı.",
+        "İlk montajda eksik şarj yapılması.",
+        "Bakım sırasında yanlış miktar doldurulması.",
+        "Hattın bir bölümünde kaçak veya gözenek."
+      ],
+      "cozum_adimlari": [
+        "Sistemi manometre ile kontrol edin, basınç değerlerini referansla karşılaştırın.",
+        "Kaçak testini azot ve vakum yöntemiyle yapın.",
+        "Kaçağı tespit edip onardıktan sonra sistemi vakuma alın.",
+        "Üretici talimatına uygun miktarda soğutucu akışkan şarj edin."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Soğutucu akışkan ile çalışma yalnızca yetkili ve sertifikalı personel tarafından yapılmalıdır."
+    },
+    {
+      "id": "daikin-outdoor-l5",
+      "kod": "L5",
+      "marka": "Daikin",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "VRV",
+      "tanım": "Güç Modülü (IPM) Aşırı Akım / Kısa Devre",
+      "olasi_nedenler": [
+        "Kompresör sargılarında kısa devre veya toprak kaçağı.",
+        "Inverter güç modülü (IPM) arızası.",
+        "Besleme geriliminde ciddi dengesizlik veya ani yükselme.",
+        "Yanlış sigorta veya kesici seçimi."
+      ],
+      "cozum_adimlari": [
+        "Kompresör sargı dirençlerini ve izolasyon direncini ölçün.",
+        "Şebeke gerilimini ve faz dengesini kontrol edin.",
+        "IPM modülünü ve güç devresini üretici talimatına göre test edin.",
+        "Gerekirse IPM ve/veya kompresörü değiştirin."
+      ],
+      "zorluk_seviyesi": 5,
+      "guvenlik_uyarisi": "Yüksek DC gerilim ve yüksek akım söz konusudur; yalnızca yetkili ve deneyimli personel müdahale etmelidir."
+    },
+    {
+      "id": "daikin-outdoor-l3",
+      "kod": "L3",
+      "marka": "Daikin",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "VRV",
+      "tanım": "Kompresör Aşırı Akım Hatası",
+      "olasi_nedenler": [
+        "Kompresör mekanik olarak zorlanıyor veya kilitlenmiş.",
+        "Besleme gerilimi düşük veya dengesiz.",
+        "Soğutucu akışkan devresinde tıkanıklık.",
+        "Kompresör sargılarında kısmi kısa devre."
+      ],
+      "cozum_adimlari": [
+        "Besleme gerilimini ve faz dengesini kontrol edin.",
+        "Kompresör akımını pens ampermetre ile ölçün.",
+        "Soğutucu akışkan devresindeki basınç ve sıcaklıkları kontrol edin.",
+        "Gerekirse kompresör ve devre elemanlarını test edin."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Aşırı akım yangın ve cihaz hasarı riski taşır; sebep bulunmadan cihazı zorlamayın."
+    },
+    {
+      "id": "daikin-outdoor-h0",
+      "kod": "H0",
+      "marka": "Daikin",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "VRV",
+      "tanım": "Kompresör Deşarj Sıcaklığı Çok Yüksek",
+      "olasi_nedenler": [
+        "Yetersiz soğutucu akışkan debisi (kısmi tıkanıklık veya eksik gaz).",
+        "Kondenser tarafında hava akışının yetersiz olması.",
+        "Sistemin uzun süre yüksek yükte çalışması.",
+        "Kompresör yağlama veya soğutma problemleri."
+      ],
+      "cozum_adimlari": [
+        "Deşarj sıcaklığını ve basınçları referans değerlerle karşılaştırın.",
+        "Dış ünite ısı eşanjörünü ve fanlarını temizleyin, hava akışını iyileştirin.",
+        "Soğutucu akışkan devresinde süperheat ve subcooling değerlerini kontrol edin.",
+        "Gerekirse sistem yük koşullarını yeniden değerlendirin."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Aşırı deşarj sıcaklığı kompresöre ciddi zarar verebilir; sorunu çözmeden cihazı zorlamayın."
+    },
+    {
+      "id": "daikin-indoor-a3",
+      "kod": "A3",
+      "marka": "Daikin",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Kaset / Kanal Tip",
+      "tanım": "Drenaj Seviye Sensörü / Taşma Hatası",
+      "olasi_nedenler": [
+        "Drenaj hattında tıkanıklık sebebiyle suyun tahliye olmaması.",
+        "Drenaj pompasının arızalanması.",
+        "Seviye sensörünün (float switch) sıkışması.",
+        "Yanlış drenaj eğimi veya hatalı montaj."
+      ],
+      "cozum_adimlari": [
+        "İç ünitenin drenaj tavasında su birikimi olup olmadığını kontrol edin.",
+        "Drenaj hattını temizleyin, tıkanıklıkları giderin.",
+        "Float switch’i manuel olarak hareket ettirerek tetiklenme olup olmadığını kontrol edin.",
+        "Pompa besleme gerilimini ve çalışmasını kontrol edin; gerekirse pompayı değiştirin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Su ve elektrik kombinasyonu kayma ve elektrik çarpması riski taşır; izole eldiven ve uygun ayakkabı kullanın."
+    },
+    {
+      "id": "daikin-indoor-a6",
+      "kod": "A6",
+      "marka": "Daikin",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "VRV İç Ünite",
+      "tanım": "İç Ünite Fan Motoru Hatası",
+      "olasi_nedenler": [
+        "Fan motoru konnektöründe gevşeklik veya oksitlenme.",
+        "DC fan motoru veya geri besleme sensörü arızası.",
+        "Fan pervanesinde yabancı cisim veya sıkışma.",
+        "İç ünite PCB üzerindeki fan sürücü devresi arızası."
+      ],
+      "cozum_adimlari": [
+        "Fanın enerjisiz durumda serbestçe dönüp dönmediğini kontrol edin.",
+        "Fan motoru konnektörlerini söküp tekrar takın, oksit varsa temizleyin.",
+        "Gerekirse fan motorunu test modunda veya harici besleme ile test edin.",
+        "Sorun devam ederse fan motorunu ve gerekiyorsa PCB’yi değiştirin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Dönen parçalara müdahale öncesi mutlaka enerjiyi kesin; fan ani çalışabilir."
+    },
+    {
+      "id": "daikin-indoor-u4",
+      "kod": "U4",
+      "marka": "Daikin",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "VRV İç Ünite",
+      "tanım": "İç Ünite – Dış Ünite Haberleşme Hatası",
+      "olasi_nedenler": [
+        "İç ve dış ünite arasındaki haberleşme kablosunda kopukluk.",
+        "Haberleşme hattının yanlış bağlanması veya ters polarite.",
+        "Adresleme çakışması veya hatalı sistem konfigürasyonu.",
+        "Dış ünite veya iç ünite kartında haberleşme devresi arızası."
+      ],
+      "cozum_adimlari": [
+        "Haberleşme kablosunun bağlantı şemasına uygun bağlandığını doğrulayın.",
+        "Kablo süreklilik testini ve gerilim ölçümünü yapın.",
+        "Adresleme ve konfigürasyonu üretici talimatına göre kontrol edin.",
+        "Gerekirse PCB’ler üzerinde haberleşme devrelerini test edin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Haberleşme hattı düşük voltajlı olsa da ana beslemeyi kesmeden işlem yapmayın."
+    }
+  ]
+}

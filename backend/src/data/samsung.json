@@ -1,0 +1,268 @@
+{
+  "faults": [
+    {
+      "id": "samsung-outdoor-e201",
+      "kod": "E201",
+      "marka": "Samsung",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "DVM S",
+      "tanım": "İç Ünite ile Dış Ünite Haberleşme Hatası",
+      "olasi_nedenler": [
+        "İç ve dış ünite arasındaki iletişim kablosunda kopukluk veya gevşek bağlantı.",
+        "Yanlış kablolama, ters polarite veya faz karışıklığı.",
+        "Dış ünite ana PCB üzerindeki haberleşme devresi arızası.",
+        "Adresleme hatası veya aynı adreste birden fazla iç ünite tanımlanması."
+      ],
+      "cozum_adimlari": [
+        "Sistemin enerjisini tamamen kesin ve 3–5 dakika bekleyin.",
+        "İletişim kablosunun uçlarını ve klemens bağlantılarını görsel olarak kontrol edin.",
+        "Kablo süreklilik ve izolasyon testlerini ölçü aleti ile yapın.",
+        "Tüm iç ünitelerin adreslerini kontrol edin, çakışma olmadığından emin olun.",
+        "Sorun devam ederse dış ünite ana PCB’yi test edin veya değiştirin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Haberleşme hattı düşük voltajlı olsa bile müdahale öncesi ana besleme gerilimini kesin."
+    },
+    {
+      "id": "samsung-outdoor-e221",
+      "kod": "E221",
+      "marka": "Samsung",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "DVM S",
+      "tanım": "Dış Üniteler Arası Haberleşme Hatası (Multi Outdoor Sistem)",
+      "olasi_nedenler": [
+        "Master ve slave dış ünite arasındaki haberleşme kablosunda kopukluk.",
+        "Master/slave ayarlarının yanlış yapılması.",
+        "Dış ünitelerden birinin enerjisinin kesik olması.",
+        "Haberleşme hattına harici ekipman bağlanması (yanlış entegrasyon)."
+      ],
+      "cozum_adimlari": [
+        "Dış ünitelerin adres, master/slave ayarlarını kontrol edin.",
+        "Dış üniteler arası haberleşme kablosunu ve bağlantı klemenslerini kontrol edin.",
+        "Tüm dış ünitelerin aynı fazdan ve kararlı besleme aldığından emin olun.",
+        "Harici BMS veya kontrol cihazı varsa devre dışı bırakıp sistemi test edin."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Birden fazla dış ünite ile çalışırken besleme devreleri karışık olabilir, yanlış hatta müdahale etmeyin."
+    },
+    {
+      "id": "samsung-indoor-e101",
+      "kod": "E101",
+      "marka": "Samsung",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "DVM S / DVM S Eco",
+      "tanım": "Oda Sıcaklık Sensörü (Termistör) Hatası",
+      "olasi_nedenler": [
+        "Oda sensörünün yerinden çıkması veya kasaya iyi temas etmemesi.",
+        "Sensör kablosunda kopukluk, kısa devre veya oksitlenme.",
+        "İç ünite PCB üzerindeki sensör giriş devresinde arıza.",
+        "Sensör direncinin sıcaklık değerine göre anormal çıkması."
+      ],
+      "cozum_adimlari": [
+        "Sensörün montaj noktasını ve kasaya temasını kontrol edin.",
+        "Kablo ve konnektörlerini görsel olarak kontrol edin, gerekirse yeniden sıkın.",
+        "Sensör direncini oda sıcaklığında ölçerek referans tablo ile karşılaştırın.",
+        "Direnç değeri uyumsuz ise sensörü değiştirin; devam ederse PCB’yi test edin."
+      ],
+      "zorluk_seviyesi": 2,
+      "guvenlik_uyarisi": "Düşük riskli bir arızadır, yine de her müdahale öncesi enerjiyi kesin."
+    },
+    {
+      "id": "samsung-indoor-e102",
+      "kod": "E102",
+      "marka": "Samsung",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "DVM S / Kaset Tip",
+      "tanım": "Eşanjör (Batarya) Sıcaklık Sensörü Hatası",
+      "olasi_nedenler": [
+        "Batarya sensörünün boru üzerinden ayrılması.",
+        "Sensör kablosunda kopukluk veya kısa devre.",
+        "Yoğuşma suyu ve nem nedeniyle konnektör oksitlenmesi.",
+        "İç ünite PCB’de sensör okuma devresi arızası."
+      ],
+      "cozum_adimlari": [
+        "Sensörün batarya borusuna sıkı ve düzgün temas ettiğini kontrol edin.",
+        "Kablo güzergahını ve konnektörleri kontrol edin, gerekirse temizleyin.",
+        "Sensör direncini ölçerek üretici referans değerleriyle kıyaslayın.",
+        "Sensör değişimi sonrası hata devam ederse PCB’yi kontrol edin."
+      ],
+      "zorluk_seviyesi": 2,
+      "guvenlik_uyarisi": "Yoğuşma suyuna maruz kalan kısımlarda kayma ve kısa devre riskine dikkat edin."
+    },
+    {
+      "id": "samsung-indoor-e122",
+      "kod": "E122",
+      "marka": "Samsung",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Kaset Tip / Kanal Tip",
+      "tanım": "Drenaj Pompası veya Seviye Sensörü Hatası",
+      "olasi_nedenler": [
+        "Drenaj pompasının sıkışması veya hiç çalışmaması.",
+        "Seviye (float) sensörünün takılı kalması.",
+        "Drenaj hattında tıkanıklık ve geri basma.",
+        "Pompa besleme geriliminin gelmemesi."
+      ],
+      "cozum_adimlari": [
+        "İç ünitenin drenaj tavasında su birikip birikmediğini kontrol edin.",
+        "Drenaj hattını basınçlı su veya hava ile temizleyin.",
+        "Float switch’i elle kaldırıp indirerek sesli tetikleme olup olmadığını kontrol edin.",
+        "Pompa besleme gerilimini ölçün; gerekirse pompayı değiştirin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Su ve elektrik kombinasyonu kaygan zemin ve elektrik çarpması riski taşır; izole ayakkabı ve eldiven kullanın."
+    },
+    {
+      "id": "samsung-indoor-e154",
+      "kod": "E154",
+      "marka": "Samsung",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Tüm DVM İç Üniteler",
+      "tanım": "İç Ünite Fan Motoru / Geri Besleme Hatası",
+      "olasi_nedenler": [
+        "Fan motoru konnektöründe gevşeklik veya oksit.",
+        "DC fan motoru arızası (Hall sensör geri besleme yok).",
+        "Fan pervanesinde yabancı cisim veya sıkışma.",
+        "İç ünite PCB üzerindeki fan sürücü devresi arızası."
+      ],
+      "cozum_adimlari": [
+        "Fanın enerjisizken elle rahatça döndüğünü kontrol edin.",
+        "Fan motoru konnektörlerini söküp tekrar takın, oksit varsa temizleyin.",
+        "Gerekirse fan motorunu doğrudan besleme ile test edin.",
+        "Sorun devam ederse fan motoru ve/veya PCB değişimi yapın."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Dönen parçalara müdahale öncesi mutlaka enerjiyi kesin, fan ani çalışabilir."
+    },
+    {
+      "id": "samsung-outdoor-e401",
+      "kod": "E401",
+      "marka": "Samsung",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "DVM S",
+      "tanım": "Yüksek Basınç (HP) Koruma Hatası",
+      "olasi_nedenler": [
+        "Dış ünite eşanjörünün kirli olması, hava akışının zayıf olması.",
+        "Dış ünite fanlarının arızalı olması veya eksik devirde çalışması.",
+        "Aşırı soğutucu akışkan şarjı.",
+        "Ünitelerin birbirine çok yakın montajı nedeniyle sıcak hava devirdaimi."
+      ],
+      "cozum_adimlari": [
+        "Dış ünite bataryasını iyice temizleyin, hava akışını engelleyen cisimleri kaldırın.",
+        "Tüm fan motorlarının çalışmasını ve devirlerini kontrol edin.",
+        "Manifold ile yüksek basınç değerini ölçün ve referans değerlerle karşılaştırın.",
+        "Gerekirse soğutucu akışkan miktarını üretici talimatına göre yeniden ayarlayın."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Yüksek basınç hattında çalışma sırasında kişisel koruyucu ekipman kullanın; yanlış müdahale kompresöre zarar verebilir."
+    },
+    {
+      "id": "samsung-outdoor-e402",
+      "kod": "E402",
+      "marka": "Samsung",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "DVM S",
+      "tanım": "Düşük Basınç (LP) Koruma Hatası",
+      "olasi_nedenler": [
+        "Sistemde soğutucu akışkan kaçağı veya yetersiz şarj.",
+        "Genleşme valfi, filtre veya boru hattında tıkanıklık.",
+        "Aşırı düşük dış ortam sıcaklığında uygunsuz modda çalışma."
+      ],
+      "cozum_adimlari": [
+        "Düşük basınç değerini manifold ile ölçün.",
+        "Kaçak tespit pompası veya azot basıncı ile kaçak kontrolü yapın.",
+        "Filtre ve genleşme elemanlarını tıkanıklığa karşı kontrol edin.",
+        "Gerekirse sistem vakum ve doğru miktarda yeniden şarj işlemi uygulayın."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Soğutucu akışkan işlemleri sadece yetkili personel tarafından yapılmalıdır."
+    },
+    {
+      "id": "samsung-outdoor-e416",
+      "kod": "E416",
+      "marka": "Samsung",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "DVM S",
+      "tanım": "Kompresör Deşarj Sıcaklığı Aşırı Yüksek",
+      "olasi_nedenler": [
+        "Yetersiz soğutucu akışkan debisi veya kısmi tıkanıklık.",
+        "Kondenser tarafında hava akışının zayıf olması.",
+        "Kompresör yağlama problemleri.",
+        "Uzun süreli aşırı yükte çalışma."
+      ],
+      "cozum_adimlari": [
+        "Deşarj sıcaklığını ve basıncını ölçerek referans değerlerle karşılaştırın.",
+        "Dış ünite eşanjör ve fan durumunu kontrol edin.",
+        "Soğutucu akışkan devresinde süperheat ve subcooling ölçümleri yapın.",
+        "Gerekirse sistem kapasitesini ve çalışma şartlarını yeniden değerlendirin."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Aşırı deşarj sıcaklığı kompresör arızasına neden olabilir; arıza giderilmeden cihazı zorlamayın."
+    },
+    {
+      "id": "samsung-outdoor-e411",
+      "kod": "E411",
+      "marka": "Samsung",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "DVM S",
+      "tanım": "Kompresör Aşırı Akım / Inverter IPM Hatası",
+      "olasi_nedenler": [
+        "Kompresör sargılarında kısa devre veya toprak kaçağı.",
+        "Inverter güç modülü (IPM) arızası.",
+        "Besleme geriliminde ciddi dalgalanma veya dengesizlik.",
+        "Kompresörün mekanik olarak kilitlenmesi."
+      ],
+      "cozum_adimlari": [
+        "Kompresör sargı dirençlerini ve yalıtım direncini ölçün.",
+        "Besleme gerilimini faz-faz ve faz-nötr olarak kontrol edin.",
+        "IPM ve güç devresi bileşenlerini üretici talimatına göre test edin.",
+        "Kompresör mekanik olarak kilitlenmiş ise kompresör değişimi planlayın."
+      ],
+      "zorluk_seviyesi": 5,
+      "guvenlik_uyarisi": "Yüksek DC gerilim ve yüksek akım söz konusudur; yalnızca yetkili ve tecrübeli personel müdahale etmelidir."
+    },
+    {
+      "id": "samsung-outdoor-e301",
+      "kod": "E301",
+      "marka": "Samsung",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "DVM S / DVM S Water",
+      "tanım": "Dış Ortam Sıcaklık Sensörü Hatası",
+      "olasi_nedenler": [
+        "Dış ortam sensör kablosunda kopukluk veya kısa devre.",
+        "Sensörün direkt güneş ışığına veya yapay ısı kaynağına maruz kalması.",
+        "Sensör direncinin normal aralık dışında olması.",
+        "PCB üzerindeki sensör okuma devresinde arıza."
+      ],
+      "cozum_adimlari": [
+        "Sensör konumunu kontrol edin, direkt güneş veya ısı kaynağı almamasını sağlayın.",
+        "Sensör kablo ve konnektörlerini kontrol edin.",
+        "Direnç ölçümü yaparak referans tablo ile karşılaştırın.",
+        "Gerekirse sensörü yenisiyle değiştirin; sorun sürerse PCB’yi kontrol edin."
+      ],
+      "zorluk_seviyesi": 2,
+      "guvenlik_uyarisi": "Dış ünite içinde çalışırken keskin saç kenarları ve hareketli parçalara dikkat edin."
+    },
+    {
+      "id": "samsung-indoor-u101",
+      "kod": "U101",
+      "marka": "Samsung",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Tüm DVM İç Üniteler",
+      "tanım": "Adres Çakışması / İç Ünite ID Hatası",
+      "olasi_nedenler": [
+        "Aynı hatta bağlı iki iç ünitenin aynı ID/adrese sahip olması.",
+        "Adres ayarı sırasında enerji kesintisi yaşanması.",
+        "Yanlış DIP switch veya servis menüsü adres ayarı.",
+        "Eski konfigürasyon verisinin EEPROM’da kalması."
+      ],
+      "cozum_adimlari": [
+        "Hattaki tüm iç ünitelerin adres listesini çıkarın.",
+        "Adresleri benzersiz olacak şekilde yeniden yapılandırın.",
+        "Gerekirse iç üniteyi fabrika ayarlarına döndürüp adreslemeyi tekrar yapın.",
+        "Yeni ayarlar sonrası sistemi yeniden başlatın ve hata kodunu kontrol edin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Adresleme işlemleri sırasında cihazı sık aç-kapa yapmak elektronik bileşenlere zarar verebilir."
+    }
+  ]
+}

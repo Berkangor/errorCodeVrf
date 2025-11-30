@@ -1,0 +1,246 @@
+{
+  "faults": [
+    {
+      "id": "hisense-outdoor-e1",
+      "kod": "E1",
+      "marka": "Hisense",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Hi-FLEXi VRF",
+      "tanım": "Yüksek Basınç (HP) Koruma Hatası",
+      "olasi_nedenler": [
+        "Dış ünite bataryasının kirli olması ve hava akışının zayıf kalması.",
+        "Dış ünite fan motorlarının arızalı olması veya dönmemesi.",
+        "Soğutucu akışkanın fazla şarj edilmesi.",
+        "Dış ünitelerin birbirine çok yakın montajlanması nedeniyle sıcak hava devirdaimi."
+      ],
+      "cozum_adimlari": [
+        "Dış ünite bataryasını ve fan ızgaralarını temizleyin, hava giriş/çıkışlarını açın.",
+        "Tüm fan motorlarının çalıştığını ve yeterli devirde döndüğünü kontrol edin.",
+        "Manifold ile yüksek basınç hattını ölçün ve referans değerlerle kıyaslayın.",
+        "Gerekirse soğutucu akışkan miktarını üretici talimatına göre yeniden ayarlayın."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Yüksek basınç hattı ile çalışırken kişisel koruyucu ekipman kullanın, yanlış müdahale kompresöre zarar verebilir."
+    },
+    {
+      "id": "hisense-outdoor-e2",
+      "kod": "E2",
+      "marka": "Hisense",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Hi-FLEXi VRF",
+      "tanım": "Düşük Basınç (LP) Koruma Hatası",
+      "olasi_nedenler": [
+        "Sistemde soğutucu akışkan kaçağı veya eksik şarj.",
+        "Genleşme valfi, filtre veya boru hattında tıkanıklık.",
+        "İç ünitelerden bir veya birkaçı kapalıyken düşük debide çalışma.",
+        "Aşırı düşük dış ortam sıcaklığında uygunsuz çalışma modu."
+      ],
+      "cozum_adimlari": [
+        "Manifold ile düşük basınç hattı basıncını ölçün.",
+        "Kaçak tespit yöntemiyle (azot, vakum testi, kaçak sıvısı vb.) hattı kontrol edin.",
+        "Filtre, genleşme elemanı ve boru hattında tıkanıklık olup olmadığını kontrol edin.",
+        "Gerekirse sistem vakum ve doğru miktarda yeniden şarj işlemini uygulayın."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Soğutucu akışkan ile çalışma yalnızca sertifikalı personel tarafından yapılmalıdır."
+    },
+    {
+      "id": "hisense-outdoor-e3",
+      "kod": "E3",
+      "marka": "Hisense",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Hi-FLEXi VRF",
+      "tanım": "Kompresör Aşırı Akım / Aşırı Yük Hatası",
+      "olasi_nedenler": [
+        "Kompresör sargılarında kısa devre veya toprak kaçağı.",
+        "Kompresörün mekanik olarak kilitlenmesi.",
+        "Besleme geriliminde dengesizlik veya düşük gerilim.",
+        "Inverter güç modülü (IPM) arızası."
+      ],
+      "cozum_adimlari": [
+        "Kompresör sargı dirençlerini ve yalıtım direncini ölçün.",
+        "Besleme gerilimini faz-faz ve faz-nötr olarak kontrol edin.",
+        "Kompresörde mekanik sıkışma olup olmadığını değerlendirin.",
+        "Gerekirse inverter güç kartını ve güç elemanlarını test edin veya değiştirin."
+      ],
+      "zorluk_seviyesi": 5,
+      "guvenlik_uyarisi": "Yüksek akım ve DC gerilimle çalışma ciddi risk taşır; yalnızca yetkili personel müdahale etmelidir."
+    },
+    {
+      "id": "hisense-outdoor-e5",
+      "kod": "E5",
+      "marka": "Hisense",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Hi-FLEXi VRF",
+      "tanım": "Dış Ünite Deşarj Sıcaklığı Çok Yüksek",
+      "olasi_nedenler": [
+        "Yetersiz soğutucu akışkan debisi (kısmi tıkanıklık veya eksik gaz).",
+        "Kondenser tarafında hava akışının yetersiz olması.",
+        "Sistemin uzun süre yüksek yükte çalışması.",
+        "Kompresör yağlama veya soğutma problemleri."
+      ],
+      "cozum_adimlari": [
+        "Deşarj sıcaklığını ve basıncını ölçerek referans değerlerle karşılaştırın.",
+        "Dış ünite bataryası ve fanları temizleyin, hava akışını iyileştirin.",
+        "Soğutucu akışkan devresinde süperheat ve subcooling ölçümleri yapın.",
+        "Sistemi tasarım değerlerine uygun yük koşullarında yeniden devreye alın."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Aşırı deşarj sıcaklığı kompresör ömrünü ciddi şekilde kısaltır; sebep bulunmadan cihazı zorlamayın."
+    },
+    {
+      "id": "hisense-outdoor-p0",
+      "kod": "P0",
+      "marka": "Hisense",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "Hi-FLEXi VRF",
+      "tanım": "Dış Ünite Ortam Sıcaklık Sensörü Hatası",
+      "olasi_nedenler": [
+        "Sensör kablosunda kopukluk veya kısa devre.",
+        "Sensörün doğrudan güneş ışığına maruz kalması.",
+        "Sensör direncinin normal aralıktan sapması.",
+        "PCB üzerindeki sensör okuma devresinde arıza."
+      ],
+      "cozum_adimlari": [
+        "Sensörün montaj yerini kontrol edin, doğrudan güneş veya ısı kaynağı almamasını sağlayın.",
+        "Sensör kablosu ve konnektörlerini gevşeklik ve oksit açısından inceleyin.",
+        "Direnç ölçümü yaparak referans tablo ile karşılaştırın.",
+        "Gerekirse sensörü yenisi ile değiştirin; sorun devam ederse PCB’yi kontrol edin."
+      ],
+      "zorluk_seviyesi": 2,
+      "guvenlik_uyarisi": "Dış ünite içinde çalışırken keskin saç kenarları ve hareketli parçalara dikkat edin."
+    },
+    {
+      "id": "hisense-indoor-e7",
+      "kod": "E7",
+      "marka": "Hisense",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Hi-FLEXi İç Ünite",
+      "tanım": "İç/Dış Ünite Haberleşme Hatası",
+      "olasi_nedenler": [
+        "İç ünite ile dış ünite arasındaki haberleşme kablosunda kopukluk.",
+        "Kutupların yanlış bağlanması veya hatalı kablolama.",
+        "Adresleme hatası, aynı adreste birden fazla iç ünite.",
+        "Dış ünitenin enerjisinin kesik olması veya geç devreye girmesi."
+      ],
+      "cozum_adimlari": [
+        "Sistemin enerjisini tamamen kesin, birkaç dakika bekledikten sonra tekrar açın.",
+        "Haberleşme kablosunun bağlantı sırasını ve polaritesini kontrol edin.",
+        "Tüm iç ünitelerin adres ayarlarını kontrol edin, çakışma olmadığından emin olun.",
+        "Haberleşme hattındaki gerilimi ölçün; referans aralıkta değilse kablo ve kartları kontrol edin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Haberleşme hattı düşük voltajlı olsa da ana besleme gerilimini kesmeden müdahale etmeyin."
+    },
+    {
+      "id": "hisense-indoor-f0",
+      "kod": "F0",
+      "marka": "Hisense",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Kaset / Kanal Tip",
+      "tanım": "Oda Sıcaklık Sensörü Hatası",
+      "olasi_nedenler": [
+        "Sensörün yerinden çıkması veya kasaya iyi temas etmemesi.",
+        "Sensör kablosunda kopukluk, kısa devre veya izolasyon sorunu.",
+        "İç ünite PCB üzerindeki sensör okuma devresinde arıza.",
+        "Sensör direncinin sıcaklık ile uyumsuz değişmesi."
+      ],
+      "cozum_adimlari": [
+        "Sensörün montaj yerini ve kasaya temasını kontrol edin.",
+        "Kablolarda kopukluk, sıkışma veya ezilme olup olmadığını kontrol edin.",
+        "Direnç ölçümü yaparak üretici referans değerleri ile kıyaslayın.",
+        "Gerekirse sensörü değiştirin; sorun devam ederse iç ünite PCB’sini kontrol edin."
+      ],
+      "zorluk_seviyesi": 2,
+      "guvenlik_uyarisi": "Düşük riskli bir arızadır, yine de tüm işlemler enerji kesilerek yapılmalıdır."
+    },
+    {
+      "id": "hisense-indoor-f1",
+      "kod": "F1",
+      "marka": "Hisense",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Hi-FLEXi İç Ünite",
+      "tanım": "Eşanjör (Batarya) Sıcaklık Sensörü Hatası",
+      "olasi_nedenler": [
+        "Sensör boru üzerinden ayrılmış veya gevşemiş.",
+        "Sensör kablosunda kopukluk veya kısa devre.",
+        "Yoğuşma suyu veya nem nedeniyle konnektör oksitlenmesi.",
+        "PCB üzerindeki sensör giriş devresi arızası."
+      ],
+      "cozum_adimlari": [
+        "Sensörün batarya borusuna sıkı ve düzgün temas ettiğini kontrol edin.",
+        "Kablo güzergahını ve konnektörleri kontrol edin, oksit varsa temizleyin.",
+        "Direnç ölçümü yaparak referans değerlerle karşılaştırın.",
+        "Sorun devam ederse sensörü ve gerekirse iç ünite PCB’sini değiştirin."
+      ],
+      "zorluk_seviyesi": 2,
+      "guvenlik_uyarisi": "Yoğuşma suyunun bulunduğu bölgelerde kısa devre riskine karşı dikkatli olun."
+    },
+    {
+      "id": "hisense-indoor-f3",
+      "kod": "F3",
+      "marka": "Hisense",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Kaset / Kanal Tip",
+      "tanım": "Drenaj Pompası veya Seviye Sensörü Hatası",
+      "olasi_nedenler": [
+        "Drenaj pompası çalışmıyor, sıkışmış veya tıkalı.",
+        "Seviye sensörü (float) takılı kalmış veya arızalı.",
+        "Drenaj hattında tıkanıklık nedeniyle su geri basıyor.",
+        "Pompa besleme gerilimi gelmiyor."
+      ],
+      "cozum_adimlari": [
+        "Drenaj tavasında su birikip birikmediğini kontrol edin.",
+        "Drenaj hattını temizleyin, tıkanıklıkları giderin.",
+        "Float switch’i manuel olarak hareket ettirerek tetiklenme olup olmadığını kontrol edin.",
+        "Pompa besleme gerilimini ölçün; gerekirse pompayı değiştirin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Su ve elektrik kombinasyonu kayma ve elektrik çarpması riski taşır; izole eldiven ve uygun ayakkabı kullanın."
+    },
+    {
+      "id": "hisense-indoor-f5",
+      "kod": "F5",
+      "marka": "Hisense",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Hi-FLEXi İç Ünite",
+      "tanım": "İç Ünite Fan Motoru / Geri Besleme Hatası",
+      "olasi_nedenler": [
+        "Fan motoru konnektörünün gevşek veya oksitli olması.",
+        "DC fan motoru veya Hall sensör arızası.",
+        "Fan pervanesinde yabancı cisim, balans veya sıkışma.",
+        "İç ünite PCB üzerindeki fan sürücü devresi arızası."
+      ],
+      "cozum_adimlari": [
+        "İç ünite kapağını açarak fanın serbestçe dönüp dönmediğini kontrol edin.",
+        "Fan motoru konnektörlerini söküp tekrar takın, oksit varsa temizleyin.",
+        "Gerekirse fan motorunu test modunda veya harici besleme ile test edin.",
+        "Sorun devam ederse fan motorunu ve gerekiyorsa PCB’yi değiştirin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Dönen parçalara müdahale öncesi mutlaka enerjiyi kesin; fan aniden çalışabilir."
+    },
+    {
+      "id": "hisense-indoor-f8",
+      "kod": "F8",
+      "marka": "Hisense",
+      "cihaz_tipi": "İç Ünite",
+      "model_serisi": "Hi-FLEXi İç Ünite",
+      "tanım": "EEPROM / Konfigürasyon Verisi Hatası",
+      "olasi_nedenler": [
+        "İç ünite PCB üzerindeki EEPROM verisinin bozulması.",
+        "Yanlış parametre yüklenmesi veya uyumsuz kart kullanımı.",
+        "Adresleme/ayar sırasında ani enerji kesintisi.",
+        "Önceki arıza sonrası kalıcı hata kodu."
+      ],
+      "cozum_adimlari": [
+        "İç ünitenin adres ve temel parametre ayarlarını kontrol edin.",
+        "Varsa servis menüsünden fabrika ayarlarına dönmeyi deneyin.",
+        "EEPROM/programlama prosedürünü üretici talimatına göre uygulayın.",
+        "Sorun devam ederse PCB’yi yetkili yedek parça ile değiştirin."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "EEPROM ve elektronik bileşenler statik elektriğe karşı hassastır; uygun ESD koruması kullanın."
+    }
+  ]
+}
