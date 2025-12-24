@@ -1,9 +1,6 @@
-// src/api/faultsApi.js (veya neredeyse)
 
-// Vite'de environment değişkenlerine böyle erişiyoruz:
 const API_ORIGIN = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
 
-// Bizim backend tüm endpoint’leri /api/v1 altında
 const BASE_URL = `${API_ORIGIN}/api/v1`;
 
 export async function fetchAllFaults() {

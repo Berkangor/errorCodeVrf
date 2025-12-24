@@ -1,11 +1,6 @@
-// src/controllers/faultsController.js
 
-// Artık tek bir faults.json yerine, src/data/index.js içinden
-// tüm markaların birleştirilmiş fault listesini alıyoruz.
-const faultsData = require("../data"); // ../data/index.js -> { faults: [...] }
+const faultsData = require("../data"); 
 
-// GET /api/v1/faults
-// Örnek: /api/v1/faults?marka=LG&cihaz_tipi=Dış%20Ünite&q=haberleşme
 function getAllFaults(req, res) {
   const { marka, cihaz_tipi, q } = req.query;
 

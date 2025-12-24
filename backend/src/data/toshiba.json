@@ -1,3 +1,227 @@
 {
-  "faults": []
+  "faults": [
+    {
+      "id": "toshiba-rc-e01",
+      "kod": "E01",
+      "marka": "Toshiba",
+      "cihaz_tipi": "Kumanda / İç Ünite",
+      "model_serisi": "RAV-SM (Digital Inverter Split Type)",
+      "tanım": "Kumanda haberleşme hatası (master kumanda yok / iç üniteden sinyal alınmıyor)",
+      "olasi_nedenler": [
+        "Ana (master) kumandanın doğru set edilmemiş olması (2 kumandalı senaryoda).",
+        "Kumanda–iç ünite haberleşme hattında kopukluk/gevşeklik veya yanlış bağlantı.",
+        "İç ünite beslemesinin kapalı olması veya kontrol kartı problemi."
+      ],
+      "cozum_adimlari": [
+        "2 kumanda varsa birinin master, diğerinin sub olduğundan emin olun.",
+        "Kumanda haberleşme kablosu/klemenslerini kontrol edin; gevşeklik ve ters bağlantıyı giderin.",
+        "İç ünite beslemesini ve iç ünite PCB bağlantılarını kontrol edin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Klemens/PCB kontrolü öncesi enerjiyi kesin; elektrik çarpması riski vardır."
+    },
+    {
+      "id": "toshiba-rc-e02",
+      "kod": "E02",
+      "marka": "Toshiba",
+      "cihaz_tipi": "Kumanda / İç Ünite",
+      "model_serisi": "RAV-SM (Digital Inverter Split Type)",
+      "tanım": "Kumanda gönderim hatası (iç üniteye sinyal gönderilemiyor)",
+      "olasi_nedenler": [
+        "Kumanda–iç ünite hattında kopukluk veya kısa devre.",
+        "Kumanda gönderim devresi arızası.",
+        "İç ünite kontrol kartı haberleşme devresi arızası."
+      ],
+      "cozum_adimlari": [
+        "Kumanda hattını süreklilik ve kısa devre açısından kontrol edin.",
+        "Kumandayı farklı bir kumanda ile test edin (mümkünse).",
+        "Sorun devam ederse iç ünite PCB/haberleşme devresini kontrol edin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Elektriksel ölçüm yapacaksanız uygun PPE kullanın ve enerjiyi güvenli şekilde kesin."
+    },
+    {
+      "id": "toshiba-system-e04",
+      "kod": "E04",
+      "marka": "Toshiba",
+      "cihaz_tipi": "İç Ünite – Dış Ünite",
+      "model_serisi": "RAV-SM (Digital Inverter Split Type)",
+      "tanım": "İç/Dış ünite seri haberleşme hatası",
+      "olasi_nedenler": [
+        "İç–dış ünite iletişim kablolarında (1-2-3) yanlış bağlantı veya kopukluk.",
+        "Konnektör/klemenslerde gevşeklik.",
+        "İç ünite veya dış ünite PCB haberleşme devresi arızası."
+      ],
+      "cozum_adimlari": [
+        "İç–dış ünite klemens bağlantılarını (1-2-3) ve polariteyi kontrol edin.",
+        "Konnektörlerin doğru oturduğunu doğrulayın.",
+        "Sorun sürerse ilgili PCB’lerde haberleşme devresi arızası için servis testi yapın."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Enerji kesilmeden kablo/klemens müdahalesi yapmayın."
+    },
+    {
+      "id": "toshiba-outdoor-f04",
+      "kod": "F04",
+      "marka": "Toshiba",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "RAV-SM (Digital Inverter Split Type)",
+      "tanım": "Deşarj sıcaklık sensörü (TD) hatası (kopuk/kısa devre)",
+      "olasi_nedenler": [
+        "TD sensörü kopuk veya kısa devre.",
+        "Sensör konnektörü/tesisatı hatalı veya gevşek.",
+        "Dış ünite PCB sensör okuma devresi arızası."
+      ],
+      "cozum_adimlari": [
+        "İlgili sensör konnektörünün doğru takılı olduğunu kontrol edin.",
+        "Sensörün direnç değerini ölçerek referans aralığıyla karşılaştırın.",
+        "Sensör arızalıysa değiştirin; devam ederse dış ünite PCB’yi kontrol edin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Dış ünitede hareketli fan ve yüksek gerilim bulunur; enerjiyi kesmeden kapağı açmayın."
+    },
+    {
+      "id": "toshiba-outdoor-f06",
+      "kod": "F06",
+      "marka": "Toshiba",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "RAV-SM (Digital Inverter Split Type)",
+      "tanım": "Dış ünite ısı eşanjörü sıcaklık sensörü (TE) hatası (kopuk/kısa devre)",
+      "olasi_nedenler": [
+        "TE sensörü kopuk veya kısa devre.",
+        "Konnektör bağlantısı hatalı/gevşek.",
+        "PCB sensör giriş devresi arızası."
+      ],
+      "cozum_adimlari": [
+        "TE sensör konnektörünü kontrol edin.",
+        "TE sensör direnç ölçümü yapın; uygunsuzsa sensörü değiştirin.",
+        "Sorun devam ederse dış ünite PCB’yi kontrol edin/değiştirin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Elektriksel ölçümler yetkin personelce yapılmalıdır."
+    },
+    {
+      "id": "toshiba-outdoor-f07",
+      "kod": "F07",
+      "marka": "Toshiba",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "RAV-SM (Digital Inverter Split Type)",
+      "tanım": "Dış ünite sıvı/ısı eşanjörü sıcaklık sensörü (TL) hatası (kopuk/kısa devre)",
+      "olasi_nedenler": [
+        "TL sensörü kopuk veya kısa devre.",
+        "Kablo/konektör temassızlığı.",
+        "Dış ünite PCB arızası."
+      ],
+      "cozum_adimlari": [
+        "TL sensör konnektörünü ve kablosunu kontrol edin.",
+        "Sensör direnç değerini ölçün; arızalıysa sensörü değiştirin.",
+        "Devam ederse PCB sensör giriş devresini kontrol edin."
+      ],
+      "zorluk_seviyesi": 3,
+      "guvenlik_uyarisi": "Enerji kesilmeden sensör/PCB müdahalesi yapmayın."
+    },
+    {
+      "id": "toshiba-outdoor-f08",
+      "kod": "F08",
+      "marka": "Toshiba",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "RAV-SM (Digital Inverter Split Type)",
+      "tanım": "Dış hava sıcaklık sensörü (TO) hatası (kopuk/kısa devre)",
+      "olasi_nedenler": [
+        "TO sensörü kopuk veya kısa devre.",
+        "Sensör kablosu ezilmiş/hasarlı.",
+        "PCB sensör okuma devresi arızası."
+      ],
+      "cozum_adimlari": [
+        "TO sensörü ve kablosunu görsel olarak kontrol edin.",
+        "Direnç ölçümü yapın; uygunsuzsa sensörü değiştirin.",
+        "Gerekirse PCB kontrolü yapın."
+      ],
+      "zorluk_seviyesi": 2,
+      "guvenlik_uyarisi": "Düşük riskli olsa da kapağı açmadan önce enerjiyi kesin."
+    },
+    {
+      "id": "toshiba-outdoor-p05",
+      "kod": "P05",
+      "marka": "Toshiba",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "RAV-SM (Digital Inverter Split Type)",
+      "tanım": "Besleme gerilimi hatası",
+      "olasi_nedenler": [
+        "Şebeke gerilimi limit dışı (düşük/yüksek).",
+        "Besleme bağlantılarında gevşeklik/yanma.",
+        "Dış ünite PCB güç devresi arızası."
+      ],
+      "cozum_adimlari": [
+        "Şebeke gerilimini ölçün ve limit içinde olduğunu doğrulayın.",
+        "Klemens ve besleme kablolarında gevşeklik/ısınma izi kontrol edin.",
+        "Gerilim normalse dış ünite PCB güç devresini kontrol edin."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Şebeke tarafı tehlikelidir; ölçüm ve müdahale yetkili elektrik personeli ile yapılmalıdır."
+    },
+    {
+      "id": "toshiba-outdoor-p07",
+      "kod": "P07",
+      "marka": "Toshiba",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "RAV-SM (Digital Inverter Split Type)",
+      "tanım": "Heat sink aşırı ısınma hatası",
+      "olasi_nedenler": [
+        "Heat sink çevresinde hava sirkülasyonu engeli.",
+        "Fan hava akışı zayıf / fan arızası.",
+        "Güç elemanı montajında gevşeklik veya termal macun problemi."
+      ],
+      "cozum_adimlari": [
+        "Heat sink çevresinde engel olup olmadığını ve havalandırmayı kontrol edin.",
+        "Fan hava akışını ve fanın çalışmasını kontrol edin.",
+        "PCB üzerindeki güç elemanı vidalarını sıkılık açısından kontrol edin; termal macun/grease uygulamasını doğrulayın."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Inverter bölümünde yüksek DC gerilim bulunabilir; kondansatör deşarj prosedürüne uyun."
+    },
+    {
+      "id": "toshiba-outdoor-p15",
+      "kod": "P15",
+      "marka": "Toshiba",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "RAV-SM (Digital Inverter Split Type)",
+      "tanım": "Gaz kaçak algılama (TD veya TS sensöründe anormal aşırı ısınma tespiti)",
+      "olasi_nedenler": [
+        "Soğutucu akışkan eksikliği / kaçak.",
+        "Servis vanalarının tam açık olmaması.",
+        "Boru ezilmesi/akıș kısıtı veya PMV problemi.",
+        "TD/TS sensör arızası veya konnektör problemi."
+      ],
+      "cozum_adimlari": [
+        "Boru hattında ezilme/kısıt olup olmadığını kontrol edin.",
+        "Servis vanalarının tam açık olduğundan emin olun.",
+        "PMV’nin doğru çalıştığını kontrol edin.",
+        "Kaçak testi yapın; soğutucu eksikse kaçak giderip şarj edin.",
+        "TD/TS sensörlerini ve konnektörlerini kontrol edin."
+      ],
+      "zorluk_seviyesi": 5,
+      "guvenlik_uyarisi": "Soğutucu akışkanla çalışmak yetkinlik ister; kaçak/şarj işlemleri sertifikalı personelce yapılmalıdır."
+    },
+    {
+      "id": "toshiba-outdoor-p22",
+      "kod": "P22",
+      "marka": "Toshiba",
+      "cihaz_tipi": "Dış Ünite",
+      "model_serisi": "RAV-SM (Digital Inverter Split Type)",
+      "tanım": "Dış ünite fan sistem hatası (aşırı akım/kilitlenme vb.)",
+      "olasi_nedenler": [
+        "Fan motoru kilitli veya yatak problemi.",
+        "Fan sürücü devresinde aşırı akım.",
+        "Kablo/konektör temassızlığı."
+      ],
+      "cozum_adimlari": [
+        "Fan pervanesinin serbest döndüğünü ve mekanik sıkışma olmadığını kontrol edin.",
+        "Fan motoru kablo/konektörlerini kontrol edin.",
+        "Sürücü devresi ve motoru servis prosedürüne göre test edin."
+      ],
+      "zorluk_seviyesi": 4,
+      "guvenlik_uyarisi": "Fan hareketli parçadır; enerjiyi kesmeden müdahale etmeyin."
+    }
+  ]
 }
